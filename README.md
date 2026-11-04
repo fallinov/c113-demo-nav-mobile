@@ -2,33 +2,17 @@
 
 Exercice du cours 113 (séance 11) : la barre de navigation de la séance 9 passe en mobile-first.
 
-Ce dépôt contient le **code de départ** : la barre de navigation terminée, pensée pour le grand
-écran. Sur téléphone, les liens passent simplement à la ligne.
+Tu es sur la branche **`solution`**. Le code de départ est sur la branche
+[`main`](https://github.com/fallinov/c113-demo-nav-mobile).
 
-## Démarrer
+Ouvre le [commit CSS de cette branche](https://github.com/fallinov/c113-demo-nav-mobile/commits/solution/) :
+GitHub montre les lignes modifiées.
 
-1. En haut de cette page : **Use this template → Create a new repository**. Choisis ton compte
-   comme propriétaire et laisse *Include all branches* décoché : tu obtiens **ta propre copie**,
-   sur laquelle tu peux faire commit et push.
-2. Dans WebStorm : **File → New → Project from Version Control**, colle l'URL de **ta copie**.
-3. Ouvre `index.html` dans Brave ou Firefox, avec la vue mobile des DevTools à 375 px de large.
-4. Écris ton CSS dans `css/style.css`, une étape après l'autre, et recharge la page à chaque fois.
+## À retenir
 
-## Les étapes
-
-| Étape | À faire | Propriétés |
-|-------|---------|------------|
-| 1 | Menu : un lien par ligne | `flex-direction: column` sur `.menu`, retirer `flex-wrap` |
-| 2 | Header : le logo, puis le menu en dessous | `flex-direction: column` sur `.header`, retirer `justify-content`, `align-items` et `flex-wrap` |
-| 3 | Dès 768 px de large, repasser en ligne | `@media (min-width: 768px)`, `flex-direction: row`, `justify-content`, `align-items` |
-
-Teste à 375 px, puis élargis la fenêtre au-delà de 768 px.
-
-## La solution
-
-Elle est sur la branche
-[`solution`](https://github.com/fallinov/c113-demo-nav-mobile/tree/solution) de ce dépôt :
-[voir les commits](https://github.com/fallinov/c113-demo-nav-mobile/commits/solution/).
+- Mobile d'abord : le CSS de base vise le téléphone (`flex-direction: column`).
+- La media query `@media (min-width: 768px)` ajoute la mise en page des grands écrans
+  (`flex-direction: row`).
 
 ## S'entraîner
 
